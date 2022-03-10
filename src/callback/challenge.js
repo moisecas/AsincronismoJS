@@ -20,7 +20,7 @@ function fetchData(url_api, callback){ //recibe dos valores
     xhttp.send(); //ya tenemos la función que va a darle vida a los llamados de mi api
 }
 
-//llamado a api
+//llamado a api, encadenar callbacks 
 
 fetchData(API, function(error1,data1){
     if(error1) return console.error(error1);
